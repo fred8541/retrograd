@@ -2,8 +2,19 @@ window.addEventListener("load", sidenVises);
 
 function sidenVises() {
     console.log("siden vises");
+
+    //læs produkt list
+    $.getJSON("http://petlatkea.dk/2017/dui/api/productlist?callback=?", visProduktListe);
+
     visProdukt();
 }
+
+function visProduktListe(listen) {
+    console.table(listen);
+}
+
+
+
 
 function visProdukt() {
     //klon produkt_templatesdfgh
