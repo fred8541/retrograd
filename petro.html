@@ -93,24 +93,32 @@
         <div class="container">
             <section class="row hovedretbilleder">
                 <!--bondesuppe-->
-                <div class="col-sm-4 ">
-                    <section class="row"><img src="imgs/medium/bulgarskbondesuppe-md.jpg" alt="billede"></section>
-                    <section class="row">
-                        <div class="col-sm-6 suppe">
-                            <h4 class="data_navn"><i>Bulgarskbondesuppe</i></h4>
-                            <h4><span class="data_pris">49kr.</span></h4>
-                        </div>
-                        <!-- bulgarskbondesuppe tekst-->
-                        <div class="col-sm-6">
+                <template id="produkt_template">
+                    <div class="col-sm-4 ">
+                        <section class="row"><img src="imgs/medium/bulgarskbondesuppe-md.jpg" alt="billede"></section>
+                        <section class="row">
+                            <div class="col-sm-6 suppe">
+                                <h4 class="data_navn"><i>DATA_NAVN</i></h4>
+                                <h4 class="pris">DATA_PRIS <span class="data_pris">49</span>,-</h4>
+                                <!-- TODO: sæt udsolgt class ved udsolgt og sær rabat class ved rabat -->
+                                <h4><span class="rabatpris">DATA_RABAT <span class="rabatpris"></span>39</span>,-</h4>
+                                <!-- vises kun ved rabat-->
+                                <h5><span class="udsolgttekst">Denne ret er
+                         udsolgt</span></h5>
+                                <!-- denne tekst vises kun når retten er udsolgt-->
+                            </div>
+                            <!-- bulgarskbondesuppe tekst-->
+                            <div class="col-sm-6">
 
-                            <!-- Button trigger modal -->
-                            <button type="button" class="btn btn-primary btn-sm modalknap" data-toggle="modal" data-target="#myModal">
-                                Se flere detaljer
-                            </button>
-                        </div>
-                    </section>
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-primary btn-sm modalknap" data-toggle="modal" data-target="#myModal">
+                                    Se flere detaljer
+                                </button>
+                            </div>
+                        </section>
 
-                </div>
+                    </div>
+                </template>
                 <!--bondesuppe slut-->
                 <!--rogn-->
                 <div class="col-sm-4 ">
