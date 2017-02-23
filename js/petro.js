@@ -10,4 +10,5 @@ function visProdukt() {
     var klon = document.querySelector("#produkt_template").content.cloneNode(true);
     //indsæt dt i klon
     //append klon til .produkt_liste
+    document.querySelector(".produktliste").appendChild(klon);
 }
