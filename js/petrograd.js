@@ -11,12 +11,15 @@ function sidenVises() {
 
 function visProduktListe(listen) {
     console.table(listen);
+    listen.forEach(visProdukt);
 }
 
 
 
 
-function visProdukt() {
+function visProdukt(produkt) {
+    console.log(produkt);
+
     //klon produkt_templatesdfgh
     var klon = document.querySelector("#produkt_template").content.cloneNode(true);
     //indsæt dt i klon
