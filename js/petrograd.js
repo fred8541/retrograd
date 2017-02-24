@@ -73,6 +73,8 @@ function visProdukt(produkt) {
 function knapKlikketPå(oplysningerOmEventet) {
     document.querySelector('#myModalLabel').textContent = "Loader";
     document.querySelector('#myModal .modal-body p').textcontent = "...";
+    document.querySelector(".modal-body img").src = "imgs/main_900.jpg";
+
 
     var produktId = oplysningerOmEventet.target.dataset.id;
 
@@ -89,8 +91,13 @@ function visModalIndhold(mereInfo) {
     console.log("indhold fundet");
 
     document.querySelector('#myModalLabel').textContent = mereInfo.navn;
-    document.querySelector('#myModal .modal-body p').textContent = mereInfo.langbeskrivelse;
-    document.querySelector(".data_billede").src = "/imgs/small/" + produkt.billede + "-sm.jpg";
+    document.querySelector('#myModal .modal-body .data_beskrivelse').textContent = mereInfo.langbeskrivelse;
+    document.querySelector('#myModal .modal-body .data_pris').textContent = mereInfo.pris;
+    document.querySelector('#myModal .modal-body .data_status').textContent = mereInfo.status;
+    document.querySelector('#myModal .modal-body .data_rabat').textContent = mereInfo.rabat;
+    document.querySelector('#myModal .modal-body .data_vegetaregenthed').textContent = mereInfo.vegetaregenthed;
+
+    document.querySelector(".modal-body img").src = "/imgs/small/" + mereInfo.billede + "-sm.jpg";
 }
 
 /*
