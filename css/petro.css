@@ -1,10 +1,26 @@
+* {
+    box-sizing: border-box;
+}
 .baggrund {
-    background-image: url(../imgs/baggrund2-01.png);
+    background-image: url(../imgs/bbbb-01.png);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
     margin: 0;
     padding: 0;
+}
+h1 {
+    font-family: "sansita";
+    text-align: center;
+    margin-left: -8vw;
+}
+h3 {
+    font-family: "sansita";
+}
+h2 {
+    font-family: "sansita";
+    text-align: center;
+    margin-left: -8vw;
 }
 img {
     width: 100%;
@@ -19,9 +35,12 @@ img {
     margin-top: 1vw;
     width: 100%;
 }
-.produktliste indhold {
+.produktliste {
+    margin-left: 8vw;
+}
+.produktliste .indhold {
     margin-top: 4vw;
-    width: 100%;
+    padding: 3em;
 }
 button.modalknap {
     background: #F64340;
@@ -63,4 +82,7 @@ button.modalknap {
 }
 .drikkevarer .indhold:nth-child(3n+1) {
     clear: both;
+}
+footer p {
+    text-align: center;
 }
