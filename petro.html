@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurant Petrograd</title>
 
-    <link rel="stylesheet" href="css/petro.css">
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/petro.css">
     <style>
         .mySlides {
             display: none;
@@ -90,6 +91,71 @@
         </div>
         <!-- Navigationsbar slut-->
         <!-- hovedretter -->
+        <div class="container overskrift">
+            <div class=col-xs-12 col-sm-3>
+                <div class="row produktliste forretter">
+                    <h1>FORRETTER</h1>
+                    <h2>start aftenen med en af vores smagsfulde forretter</h2>
+                    <div class="forretter"></div>
+                </div>
+            </div>
+        </div>
+        <div class="container overskrift">
+            <div class=col-xs-12 col-sm-3>
+                <div class="row produktliste forretter">
+                    <h1>FORRETTER</h1>
+                    <h2>start aftenen med en af vores smagsfulde forretter</h2>
+                    <div class="forretter"></div>
+                </div>
+            </div>
+        </div>
+        <div class="container overskrift">
+            <div class=col-xs-12 col-sm-3>
+                <div class="row produktliste hovedretter">
+                    <h1>FORRETTER</h1>
+                    <h2>start aftenen med en af vores smagsfulde forretter</h2>
+                    <div class="hovedretter"></div>
+                </div>
+            </div>
+        </div>
+        <div class="container overskrift">
+            <div class=col-xs-12 col-sm-3>
+                <div class="row produktliste desserter">
+                    <h1>FORRETTER</h1>
+                    <h2>start aftenen med en af vores smagsfulde forretter</h2>
+                    <div class="desserter"></div>
+                </div>
+            </div>
+        </div>
+        <div class="container overskrift">
+            <div class=col-xs-12 col-sm-3>
+                <div class="row produktliste sideorders">
+                    <h1>FORRETTER</h1>
+                    <h2>start aftenen med en af vores smagsfulde forretter</h2>
+                    <div class="sideorders"></div>
+                </div>
+            </div>
+        </div>
+        <div class="container overskrift">
+            <div class=col-xs-12 col-sm-3>
+                <div class="row produktliste drikkevarer">
+                    <h1>FORRETTER</h1>
+                    <h2>start aftenen med en af vores smagsfulde forretter</h2>
+                    <div class="drikkevarer"></div>
+                </div>
+            </div>
+        </div>
+        <div class="container overskrift">
+            <div class=col-xs-12 col-sm-3>
+                <div class="row produktliste forretter">
+                    <h1>FORRETTER</h1>
+                    <h2>start aftenen med en af vores smagsfulde forretter</h2>
+                    <div class="forretter"></div>
+                </div>
+            </div>
+        </div>
+
+
         <div class="container">
             <section class="row produktliste">
                 <!--her skal produkter lægges ind-->
@@ -106,28 +172,91 @@
                                 <!-- TODO: sæt udsolgt class ved udsolgt og sær rabat class ved rabat -->
                                 <h4 class="rabatpris">Pris: <span class="data_rabatpris">DATA_RABATPRIS</span>,-</h4>
                                 <!-- vises kun ved rabat-->
-                                <h5><span class="udsolgttekst">Denne ret er
-                         udsolgt</span></h5>
+                                <h5 class="udsolgttekst">Denne ret er
+                         udsolgt</h5>
                                 <!-- denne tekst vises kun når retten er udsolgt-->
                             </div>
                             <!-- bulgarskbondesuppe tekst-->
                             <div class="col-sm-6">
 
                                 <!-- Button trigger modal -->
-                                <button type="button" class="btn btn-primary btn-sm modalknap" data-toggle="modal" data-target="#myModal">
+                                <button data-id="USKIFT_MIG" type="button" class="btn btn-primary btn-sm modalknap" data-toggle="modal" data-target="#myModal">
                                     Se flere detaljer
                                 </button>
+                                <!-- Modal 1-->
+                                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                                <h4 class="modal-title" id="myModalLabel">Modal titel</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <img src="imgs/small/baltiskbondesuppe-sm.jpg">
+                                                <p>Navn
+                                                </p>
+                                                <p>Beskrivelse
+                                                </p>
+                                                <p>Pris
+                                                </p>
+                                                <p>Status
+                                                </p>
+                                                <p>Rabat
+                                                </p>
+                                                <p>Vegetaregenthed
+                                                </p>
+
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
                         </section>
 
                     </div>
                 </template>
-                <!--bondesuppe slut-->
 
             </section>
         </div>
 
-        <!-- hovedretter slut -->
+
+        <!-- Modal 1-->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel_bondesuppe">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel_bondesuppe">Bulgarskbondesuppe</h4>
+                    </div>
+                    <div class="modal-body">
+
+                        <p>Navn
+                        </p>
+                        <p>Beskrivelse
+                        </p>
+                        <p>Pris
+                        </p>
+                        <p>Status
+                        </p>
+                        <p>Rabat
+                        </p>
+                        <p>Vegetaregenthed
+                        </p>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
 
 
         <script src="js/petrograd.js "></script>
