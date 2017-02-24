@@ -91,19 +91,11 @@
         </div>
         <!-- Navigationsbar slut-->
         <!-- hovedretter -->
+
         <div class="container overskrift">
             <div class=col-xs-12 col-sm-3>
                 <div class="row produktliste forretter">
-                    <h1>FORRETTER</h1>
-                    <h2>start aftenen med en af vores smagsfulde forretter</h2>
-                    <div class="forretter"></div>
-                </div>
-            </div>
-        </div>
-        <div class="container overskrift">
-            <div class=col-xs-12 col-sm-3>
-                <div class="row produktliste forretter">
-                    <h1>FORRETTER</h1>
+                    <h1>Forretter</h1>
                     <h2>start aftenen med en af vores smagsfulde forretter</h2>
                     <div class="forretter"></div>
                 </div>
@@ -112,7 +104,7 @@
         <div class="container overskrift">
             <div class=col-xs-12 col-sm-3>
                 <div class="row produktliste hovedretter">
-                    <h1>FORRETTER</h1>
+                    <h1>Hovedretter</h1>
                     <h2>start aftenen med en af vores smagsfulde forretter</h2>
                     <div class="hovedretter"></div>
                 </div>
@@ -121,7 +113,7 @@
         <div class="container overskrift">
             <div class=col-xs-12 col-sm-3>
                 <div class="row produktliste desserter">
-                    <h1>FORRETTER</h1>
+                    <h1>Desserter</h1>
                     <h2>start aftenen med en af vores smagsfulde forretter</h2>
                     <div class="desserter"></div>
                 </div>
@@ -130,7 +122,7 @@
         <div class="container overskrift">
             <div class=col-xs-12 col-sm-3>
                 <div class="row produktliste sideorders">
-                    <h1>FORRETTER</h1>
+                    <h1>Sideorders</h1>
                     <h2>start aftenen med en af vores smagsfulde forretter</h2>
                     <div class="sideorders"></div>
                 </div>
@@ -139,90 +131,75 @@
         <div class="container overskrift">
             <div class=col-xs-12 col-sm-3>
                 <div class="row produktliste drikkevarer">
-                    <h1>FORRETTER</h1>
+                    <h1>Drikkevarer</h1>
                     <h2>start aftenen med en af vores smagsfulde forretter</h2>
                     <div class="drikkevarer"></div>
                 </div>
             </div>
         </div>
-        <div class="container overskrift">
-            <div class=col-xs-12 col-sm-3>
-                <div class="row produktliste forretter">
-                    <h1>FORRETTER</h1>
-                    <h2>start aftenen med en af vores smagsfulde forretter</h2>
-                    <div class="forretter"></div>
-                </div>
-            </div>
-        </div>
+
+        <template id="produkt_template">
+
+            <section class="row indhold col-sm-4">
+
+                <a href="#"><img class="img-responsive data_billede" src="imgs/small/rodbede-cabanossi-sm.jpg" alt=""></a>
 
 
-        <div class="container">
-            <section class="row produktliste">
-                <!--her skal produkter lægges ind-->
-                <!--bondesuppe-->
-                <template id="produkt_template">
-                    <div class="col-sm-4 ">
-                        <section class="row">
-                            <a href="#"><img class="img-responsive data_billede" src="imgs/small/rodbede-cabanossi-sm.jpg" alt=""></a>
-                        </section>
-                        <section class="row">
-                            <div class="col-sm-6 suppe">
-                                <h4 class="data_navn"><i>DATA_NAVN</i></h4>
-                                <h4 class="pris">Pris: <span class="data_pris">DATA_PRIS</span>,-</h4>
-                                <!-- TODO: sæt udsolgt class ved udsolgt og sær rabat class ved rabat -->
-                                <h4 class="rabatpris">Pris: <span class="data_rabatpris">DATA_RABATPRIS</span>,-</h4>
-                                <!-- vises kun ved rabat-->
-                                <h5 class="udsolgttekst">Denne ret er
+                <h4 class="data_navn"><i>DATA_NAVN</i></h4>
+                <h4 class="pris">Pris: <span class="data_pris">DATA_PRIS</span>,-</h4>
+                <!-- TODO: sæt udsolgt class ved udsolgt og sær rabat class ved rabat -->
+                <h4 class="rabatpris">Pris: <span class="data_rabatpris">DATA_RABATPRIS</span>,-</h4>
+                <!-- vises kun ved rabat-->
+                <h5 class="udsolgttekst">Denne ret er
                          udsolgt</h5>
-                                <!-- denne tekst vises kun når retten er udsolgt-->
+                <!-- denne tekst vises kun når retten er udsolgt-->
+
+
+                <!-- Button trigger modal -->
+                <button data-id="USKIFT_MIG" type="button" class="btn btn-primary btn-sm modalknap" data-toggle="modal" data-target="#myModal">
+                    Se flere detaljer
+                </button>
+                <!-- Modal 1-->
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="myModalLabel">Modal titel</h4>
                             </div>
-                            <!-- bulgarskbondesuppe tekst-->
-                            <div class="col-sm-6">
-
-                                <!-- Button trigger modal -->
-                                <button data-id="USKIFT_MIG" type="button" class="btn btn-primary btn-sm modalknap" data-toggle="modal" data-target="#myModal">
-                                    Se flere detaljer
-                                </button>
-                                <!-- Modal 1-->
-                                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                                    <div class="modal-dialog" role="document">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                                <h4 class="modal-title" id="myModalLabel">Modal titel</h4>
-                                            </div>
-                                            <div class="modal-body">
-                                                <img src="imgs/small/baltiskbondesuppe-sm.jpg">
-                                                <p>Navn
-                                                </p>
-                                                <p>Beskrivelse
-                                                </p>
-                                                <p>Pris
-                                                </p>
-                                                <p>Status
-                                                </p>
-                                                <p>Rabat
-                                                </p>
-                                                <p>Vegetaregenthed
-                                                </p>
-
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div class="modal-body">
+                                <img src="imgs/small/baltiskbondesuppe-sm.jpg">
+                                <p>Navn
+                                </p>
+                                <p>Beskrivelse
+                                </p>
+                                <p>Pris
+                                </p>
+                                <p>Status
+                                </p>
+                                <p>Rabat
+                                </p>
+                                <p>Vegetaregenthed
+                                </p>
 
                             </div>
-                        </section>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 
+                            </div>
+                        </div>
                     </div>
-                </template>
+                </div>
+
+
 
             </section>
-        </div>
+
+
+        </template>
+
+
+
 
 
         <!-- Modal 1-->

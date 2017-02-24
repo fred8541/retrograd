@@ -52,10 +52,22 @@ function visProdukt(produkt) {
     }
 
     //append klon til .produkt_liste
-    document.querySelector(".produktliste").appendChild(klon);
-    console.log("." + produkt.kategori)
+    //document.querySelector(".produktliste").appendChild(klon);
+    //console.log("." + produkt.kategori)
 
     //document.querySelector("." + produkt.kategori).appendChild(klon);
+    console.log("." + produkt.kategori)
+    if (produkt.kategori == "forretter") {
+        document.querySelector(".forretter").appendChild(klon);
+    } else if (produkt.kategori == "hovedretter") {
+        document.querySelector(".hovedretter").appendChild(klon);
+    } else if (produkt.kategori == "desserter") {
+        document.querySelector(".desserter").appendChild(klon);
+    } else if (produkt.kategori == "drikkevarer") {
+        document.querySelector(".drikkevarer").appendChild(klon);
+    } else if (produkt.kategori == "sideorders") {
+        document.querySelector(".sideorders").appendChild(klon);
+    }
 }
 
 function knapKlikketPå(oplysningerOmEventet) {
@@ -67,6 +79,8 @@ function knapKlikketPå(oplysningerOmEventet) {
     //send forespørgelse til //http://petlatkea.dk/2017/dui/api/product?callback=?&id=21
     //med det rigtige id
     $.getJSON("http://petlatkea.dk/2017/dui/api/product?callback=?&id=" + produktId, visModalIndhold);
+
+
 
 
 }
